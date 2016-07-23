@@ -1,0 +1,21 @@
+{
+  "name": "board",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:kentandersen/board.git"
+  },
+  "author": "Kent Andersen <kentareandersen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "https-proxy-agent": "^1.0.0",
+    "node-cache": "^3.2.1",
+    "node-fetch": "^1.5.3",
+    "object.omit": "^2.0.0"
+  }
+}
