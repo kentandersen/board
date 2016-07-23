@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build-html && npm run build-css && npm run build-js",
+    "build-js": "./node_modules/.bin/webpack",
     "build-css": "./node_modules/.bin/lessc src/public/main.less dist/board.css",
     "build-html": "cp src/public/index.html dist",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +22,16 @@
     "https-proxy-agent": "^1.0.0",
     "node-cache": "^3.2.1",
     "node-fetch": "^1.5.3",
-    "object.omit": "^2.0.0"
+    "object.omit": "^2.0.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   },
   "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
     "less": "^2.7.1",
+    "webpack": "^1.13.1"
   }
 }
