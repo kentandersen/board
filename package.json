@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build-css": "./node_modules/.bin/lessc src/public/main.less dist/board.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
     "node-cache": "^3.2.1",
     "node-fetch": "^1.5.3",
     "object.omit": "^2.0.0"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
   }
 }
