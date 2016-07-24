@@ -1,10 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-class App extends React.Component {
-  render () {
-    return <p> Hello board!</p>;
-  }
-}
 
-// render(<App/>, document.getElementById('app'));
+import App from './app.jsx';
+
+render(React.createElement(App), document.getElementById('app'));
