@@ -15,7 +15,12 @@ module.exports = {
       test : /\.jsx?/,
       include : src,
       exclude: /node_modules/,
-      loader: 'babel-loader',
-    }]
+      loader: 'babel',
+    },
+    {
+      test: /\.less$/,
+      loader: "style!css!less"
+    }
+    ]
   }
 };
